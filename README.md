@@ -1,6 +1,7 @@
 # ACD-SistemaPerfilUsuario
 ---
 ##Objetivo
+
 Comprender y aplicar los conceptos de autenticación, manejo de sesiones y actualización segura
 de datos de usuario en PHP, desarrollando una solución práctica que proteja la información del
 usuario y gestione correctamente el estado de sesión en una aplicación web.
@@ -48,7 +49,9 @@ Seguridad mínima esperada:
   1. Uso de password_hash y password_veri F y.
   2. Validación básica de inputs (no vacíos. formato de correo válido).
   3. Comprobación de sesión activa en páginas restringidas.
+---
 ###2. Presentación
+---
 ####Video explicativo (mínimo 3 minutos). donde se muestre:
 1. Flujo completo: login perfil actualización de datos cambio de contraseña logout-
 2. Cómo se maneja la sesión PHP (ejemplo con S_SESSION).
