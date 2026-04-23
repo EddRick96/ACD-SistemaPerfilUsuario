@@ -26,26 +26,26 @@ Crear una tabla usuarios
   5.  fecha_registro
 
 #### Funcionalidades mínimas:
-Registro de usuario:
+##### Registro de usuario:
   1. Validar que el correo no esté repetido-
   2. Guardar la contraseña con hash.
-Login:
+##### Login:
   1. Formulario de inicio de sesión (correo contraseña).
   2. Validación de credenciales en PHP_
   3. Creación de sesión al autenticar conectamente-
-Zona privada de perfil (perfil . php):
+##### Zona privada de perfil (perfil . php):
   1. Solo accesible si la sesión está activa.
   2. Mostrar datos del usuario (nombre, correo)-
   3. Formulario para actualizar nombre y/o correo.
   4. Validar en servidor antes de actualizar.
-Cambio de contraseña (cambiar_password . php):
+##### Cambio de contraseña (cambiar_password . php):
   1. Pedir contraseña actual. nueva contraseña y confirmación.
   2. Verificar la contraseña actual usando ify.
   3. Guardar la nueva contraseña con
   4. Mostrar mensajes claros de éxito o error.
-Cierre de sesión (1 ogout• . php)•.
+##### Cierre de sesión (1 ogout• . php)•.
   1. Destruir la sesión y redirigir al login.
-Seguridad mínima esperada:
+##### Seguridad mínima esperada:
   1. Uso de password_hash y password_veri F y.
   2. Validación básica de inputs (no vacíos. formato de correo válido).
   3. Comprobación de sesión activa en páginas restringidas.
