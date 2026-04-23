@@ -58,13 +58,13 @@ Crear una tabla usuarios
 3. Qué medidas de seguridad se aplicaron (hash de contraseña, validaciones, verificación de
 sesión).
 #### Repositorio:
-1. Subir el código fuente a un repositorio público (GitHub. GitLab. Bitbucket. etc.).
-2. EI repositorio debe mostrar:
-  a. Estructura clara dc archivos (formularios, lógica, conexión, etc.).
-3. Archivo README con:
-  a. Descripción breve del sistema.
-  b. Requisitos (PHP. MySQL. etc.).
-  c. Pasos para instalar y probar localmente.
+1. **Subir el código fuente a un repositorio público (GitHub. GitLab. Bitbucket. etc.).**
+2. **EI repositorio debe mostrar:**
+   - Estructura clara dc archivos (formularios, lógica, conexión, etc.).
+3. **Archivo README con:**
+   - Descripción breve del sistema.
+   - Requisitos (PHP. MySQL. etc.).
+   - Pasos para instalar y probar localmente.
 
 
 
