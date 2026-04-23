@@ -1,12 +1,12 @@
 # ACD-SistemaPerfilUsuario
 ---
-##Objetivo
+## Objetivo
 
 Comprender y aplicar los conceptos de autenticación, manejo de sesiones y actualización segura
 de datos de usuario en PHP, desarrollando una solución práctica que proteja la información del
 usuario y gestione correctamente el estado de sesión en una aplicación web.
 ---
-###Descripción de la actividad
+### Descripción de la actividad
 Desarrollar un pequeño sistema web que permita:
 1. Autenticación de usuarios mediante login con PHP y MySQL.
 2. Acceso a una zona privada de perfil, visible solo para usuarios autenticados.
@@ -14,8 +14,8 @@ Desarrollar un pequeño sistema web que permita:
 4. Cambio de contraseña de forma segura, verificando la contraseña actual y almacenando la nueva con hash.
 5. Cierre de sesión para finalizar la autenticación.
 
-##Lineamientos
-###1. Desarrollo técnico
+## Lineamientos
+### 1. Desarrollo técnico
 Base de datos:
 Crear una tabla usuarios
 
@@ -25,7 +25,7 @@ Crear una tabla usuarios
   4.  password(hash, usando password_hash)
   5.  fecha_registro
 
-####Funcionalidades mínimas:
+#### Funcionalidades mínimas:
 Registro de usuario:
   1. Validar que el correo no esté repetido-
   2. Guardar la contraseña con hash.
@@ -50,14 +50,14 @@ Seguridad mínima esperada:
   2. Validación básica de inputs (no vacíos. formato de correo válido).
   3. Comprobación de sesión activa en páginas restringidas.
 ---
-###2. Presentación
+### 2. Presentación
 ---
-####Video explicativo (mínimo 3 minutos). donde se muestre:
+#### Video explicativo (mínimo 3 minutos). donde se muestre:
 1. Flujo completo: login perfil actualización de datos cambio de contraseña logout-
 2. Cómo se maneja la sesión PHP (ejemplo con S_SESSION).
 3. Qué medidas de seguridad se aplicaron (hash de contraseña, validaciones, verificación de
 sesión).
-####Repositorio:
+#### Repositorio:
 1. Subir el código fuente a un repositorio público (GitHub. GitLab. Bitbucket. etc.).
 2. EI repositorio debe mostrar:
   a. Estructura clara dc archivos (formularios, lógica, conexión, etc.).
