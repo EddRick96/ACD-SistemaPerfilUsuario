@@ -24,7 +24,7 @@
     </form> -->
 
         <form>
-            <a aria-current="page" href="../index.php">Inicio</a>
+            <a aria-current="page" href="../index.html">Inicio</a>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Correo</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -50,7 +50,7 @@
                     </button>
                 </div>
                 <div class="col-2">
-                    <a class="nav-link link-secondary" href="signup.php">
+                    <a class="nav-link link-secondary" href="signup.html">
                         Registrarse
                     </a>
                 </div>
