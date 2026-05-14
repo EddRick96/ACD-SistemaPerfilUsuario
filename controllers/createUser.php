@@ -1,6 +1,6 @@
 <?php 
     // Llamada al archivo de conexion con la base de datos.
-    include "config/dbConnection.php";
+    require_once "config/dbConnection.php";
     // OPCIONAL mientras de realizan pruebas validacion de cedula
     // include "dni_validate.php";
 

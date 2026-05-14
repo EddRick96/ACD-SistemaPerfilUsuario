@@ -1,6 +1,6 @@
 <?php
     if (isset($_GET['id'])) {
-        include "config/dbConnection.php";
+        require_once "config/dbConnection.php";
 
         // Uso de intval() 
         $id = intval($_GET['id']);
