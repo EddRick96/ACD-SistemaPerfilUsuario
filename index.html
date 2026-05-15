@@ -1,18 +1,20 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Erick Corp</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css"> -->
+  <!-- Bootstrap 5 CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-  <nav class="navbar">
+  <nav class="navbar bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">ErickCorp</a>
+      <a class="navbar-brand" href="index.html"><i class="bi bi-music-note-beamed me-2"></i>GearMatch</a>
       <ul class="nav justify-content-end">
         <li class="nav-item">
           <button class="btn btn-success" onclick="document.location='src/login.php'">Iniciar sesión</button>
@@ -29,4 +31,140 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearMatch AI - Encuentra tu sonido perfecto</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-music-note-beamed text-warning me-2"></i>GearMatch AI</a>
+            <div class="ms-auto">
+                <a href="src/sesion.html" class="btn btn-outline-light btn-sm me-2">Iniciar Sesión</a>
+                <a href="src/signup.html" class="btn btn-accent btn-sm gradient-custom-2">Registro</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="hero-title mb-4">Tu próximo gran sonido, seleccionado por <span>inteligencia artificial</span>.</h1>
+            <p class="lead text-muted mb-5 px-md-5">Olvídate de comparar cientos de pestañas. GearMatch AI analiza tu presupuesto y estilo para encontrar el instrumento perfecto para ti en segundos.</p>
+            <a href="#" class="btn btn-accent btn-lg text-uppercase">Empezar mi asesoría gratuita</a>
+        </div>
+    </header>
+
+    <!-- 2. El Problema y la Solución -->
+    <section class="container text-center">
+        <h2 class="section-title">¿Demasiadas opciones y poco tiempo?</h2>
+        <p class="mb-5 lead">Comprar una guitarra, un sintetizador o una batería no debería ser un examen de ingeniería. Nuestro agente de IA filtra el ruido del mercado para darte opciones reales.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="bi bi-shield-check feature-icon"></i>
+                    <h4>Sin sesgos comerciales</h4>
+                    <p class="text-muted small">Recomendaciones basadas en datos reales, reseñas verificadas y especificaciones técnicas profundas.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="bi bi-currency-dollar feature-icon"></i>
+                    <h4>Ajuste de presupuesto real</h4>
+                    <p class="text-muted small">Encontramos la mejor relación calidad-precio sin pasarnos ni un solo dólar de tu límite establecido.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="bi bi-cpu feature-icon"></i>
+                    <h4>Precisión técnica</h4>
+                    <p class="text-muted small">Filtramos por maderas tonales, tipos de pastillas, polifonía o la sensibilidad exacta de la tecla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Cómo Funciona -->
+    <section class="bg-black py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Cómo Funciona</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <h5>Define tu Perfil</h5>
+                        <p class="text-muted small">Dinos qué buscas (Ej: "Guitarra eléctrica para Jazz") y tu nivel de experiencia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <h5>Ajusta el Presupuesto</h5>
+                        <p class="text-muted small">Indica cuánto deseas invertir. Buscamos opciones nuevas y reacondicionadas de alta calidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <h5>Recibe tu Shortlist</h5>
+                        <p class="text-muted small">Obtén una comparativa de las 3 mejores opciones con enlaces y el porqué de cada elección.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Categorías -->
+    <section class="container text-center">
+        <h2 class="section-title">Categorías que Domina la IA</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="col"><div class="p-3 border border-secondary rounded"><strong>Cuerdas</strong><br><small class="text-muted">Guitarras, Bajos...</small></div></div>
+            <div class="col"><div class="p-3 border border-secondary rounded"><strong>Teclas</strong><br><small class="text-muted">Pianos, Sintetizadores...</small></div></div>
+            <div class="col"><div class="p-3 border border-secondary rounded"><strong>Percusión</strong><br><small class="text-muted">Baterías, Cajas...</small></div></div>
+            <div class="col"><div class="p-3 border border-secondary rounded"><strong>Audio Pro</strong><br><small class="text-muted">Interfaces, Mics...</small></div></div>
+        </div>
+    </section>
+
+    <!-- 5. Ejemplo de Interacción -->
+    <section class="bg-dark py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Mira a la IA en acción</h2>
+            <div class="chat-container mt-4">
+                <div class="msg msg-user">
+                    "Busco un bajo de 5 cuerdas para tocar metal, presupuesto máximo $800."
+                </div>
+                <div class="msg msg-ai">
+                    "Analizando... Te recomiendo el <strong>Ibanez SR505E</strong>. Tiene pastillas activas Bartolini ideales para distorsión y un mástil delgado para velocidad. Está actualmente en $749. Otra opción es el <strong>Schecter Stiletto</strong> por $799 si buscas un tono más oscuro."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <h5 class="mb-4 text-warning">GearMatch AI</h5>
+            <p class="small text-muted mb-4">La tecnología al servicio del arte.</p>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#" class="footer-link">Preguntas Frecuentes</a>
+                <a href="#" class="footer-link">Blog de Gear</a>
+                <a href="#" class="footer-link">Contacto</a>
+            </div>
+            <p class="small text-secondary">&copy; 2026 GearMatch AI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

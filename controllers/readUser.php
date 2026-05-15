@@ -1,27 +1,29 @@
 <?php
-    require_once "config/dbConnection.php";
+require_once "config/dbConnection.php";
 
-    $sql = "SELECT id, nombre, apellidos, correo FROM usuarios"; // Seleccionamos solo campos necesarios
-    $resultado = $connection->query($sql);
+$sql = "SELECT id, nombre, apellidos, correo FROM usuarios"; // Seleccionamos solo campos necesarios
+$resultado = $connection->query($sql);
 ?>
 //listar usuario
-//modificar para que muestre el formulario para el usuario logeado 
+//modificar para que muestre el formulario para el usuario logeado
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Usuarios</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-          crossorigin="anonymous">
-    </head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+</head>
+
 <body class="bg-light">
-    <div class="container mt-5"> 
+    <div class="container mt-5">
         <h2 class="text-center mb-4">Usuarios Registrados</h2>
-        
+
         <?php
         if ($resultado->num_rows > 0) {
             // Clases de Bootstrap para la tabla: table-striped (filas alternas), table-hover (efecto hover)
@@ -31,15 +33,15 @@
             echo "<tr><th>Nombre</th><th>Apellidos</th><th>Correo</th><th>Acciones</th></tr>";
             echo "</thead>";
             echo "<tbody>";
-            
+
             while ($fila = $resultado->fetch_assoc()) {
-                
+
                 // SEGURIDAD: ESCAPAR LA SALIDA para prevenir XSS
                 $id_esc = htmlspecialchars($fila['id']);
                 $nombre_esc = htmlspecialchars($fila['nombre']);
                 $apellidos_esc = htmlspecialchars($fila['apellidos']);
                 $correo_esc = htmlspecialchars($fila['correo']);
-                
+
                 echo "<tr>";
                 echo "<td>{$nombre_esc}</td>";
                 echo "<td>{$apellidos_esc}</td>";
@@ -64,9 +66,10 @@
         </div> -->
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-            crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
     </script>
 </body>
+
 </html>

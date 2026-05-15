@@ -32,6 +32,7 @@
         $stmt->bind_param("ssss", $dni, $name, $mail, $password_hashed);
         if ($stmt->execute()){
             echo "<p style='text-align:center; color: green;'>" . htmlspecialchars("Usuario registrado correctamente.") . "</p>";
+            echo "<p style='text-align:center;'><a href='../src/login.php'>Ver lista de usuarios</a></p>";
         } else {
             echo "<p style='text-align:center; color: red;'>" . htmlspecialchars("Error al registrar el usuario.") . "</p>";
         }
